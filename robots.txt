@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://crypto4.yolasite.com/sitemap.xml
