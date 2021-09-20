@@ -191,7 +191,23 @@ _atrk_opts = { atrk_acct:"EXMNp1IWh9106C", domain:"app.webseen.org",dynamic: tru
 </section>
 </ws-block>
 <div style="height:5979px; background-color: #FFFFFF; overflow:hidden; box-sizing: border-box; border: 1px solid #56667F; border-radius: 4px; text-align: right; line-height:14px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #56667F; padding: 0px; margin: 0px; width: 100%;"><div style="height:5959px; padding:0px; margin:0px; width: 100%;"><iframe src="https://widget.coinlib.io/widget?type=full_v2&theme=light&cnt=100&pref_coin_id=1505&graph=yes" width="100%" height="5955px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;"></iframe></div><div style="color: #FFFFFF; line-height: 14px; font-weight: 400; font-size: 11px; box-sizing: border-box; padding: 2px 6px; width: 100%; font-family: Verdana, Tahoma, Arial, sans-serif;"><a href="https://coinlib.io" target="_blank" style="font-weight: 500; color: #FFFFFF; text-decoration:none; font-size:11px">Cryptocurrency Prices</a>&nbsp;by Coinlib</div></div>
-</section>
+</section><iframe
+	src="https://viewm.moonicorn.network/#%7B%22options%22%3A%7B%22publisherAddr%22%3A%220x229D968B093d5e06E0d6fe5407Cc8c57D1baF3FA%22%2C%22whitelistedTokens%22%3A%5B%220x6B175474E89094C44Da98b954EedeAC495271d0F%22%5D%2C%22whitelistedType%22%3A%22legacy_300x250%22%2C%22randomize%22%3Atrue%2C%22targeting%22%3A%5B%5D%2C%22width%22%3A%22300%22%2C%22height%22%3A%22250%22%2C%22minPerImpression%22%3A%220%22%2C%22fallbackUnit%22%3Anull%2C%22marketSlot%22%3A%22QmXvhd9B646SaYyGDZwgWHctYtiATLefrCRqa8boYuiJ7R%22%7D%7D"
+	width="300"
+	height="250"
+	scrolling="no"
+	frameborder="0"
+	style="border: 0;"
+	onload="window.addEventListener('message', function(ev) { 
+		if (ev.data.hasOwnProperty('adexHeight') && ('https://viewm.moonicorn.network' === ev.origin)) {
+			for (let f of document.getElementsByTagName('iframe')) {	
+				if (f.contentWindow === ev.source) {
+					f.height = ev.data.adexHeight;
+				}
+			}	
+		}
+	}, false)"
+></iframe>
 </ws-block><ws-block id="ws-block-footer-HflqQwDU" src="/ws/block-templates/footer/index.html" surfaces="ws-dark-0"><footer class="ws-surface ws-dark-0" data-surface="0" data-ws-hidden-children="business_address business_description business_email business_phone business_social_profiles footer_navigation" data-ws-slots="footer">
 <ws-global slot="footer" src="/ws/globals/global-footer/index.html"><ws-footer>
 <ws-global slot="business-logo" src="/ws/globals/business-logo/index.html"><img alt="" src="ws/media-library/2d2dffd5d2464aa5ac77cf548b65e8d1/untitled-3.png" style="width: 128.508px; height: auto;"/></ws-global>
