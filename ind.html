@@ -27,7 +27,221 @@
     <![endif]-->
     <script type="text/javascript" src="./resources/external_tools.js"></script>
   </head><body class="review offline showComments noScenarios" tabindex="0">
+    <div id="sidepanel" class="close">
+      <div id="user-info">
+        <input id="user-id" class="hidden"/>
+        <div id="user-image"></div>
+        <span id="user-name">Anonymous</span>
+        <span id="user-email"></span>
+      </div>
+      <div id="navigationFolder">
+    	  <div id="sidepanelTabFolder">
+    	  	<div id="screenTab" class="sidepanelTab active" folder="screensTree">
+    	  		<span class="tabText">Screens</span>
+    	  	</div>
+    	  	<div id="scenarioTab" class="sidepanelTab" folder="scenariosTree">
+    	  		<span class="tabText">Scenarios</span>
+    		</div>
+    		<div id="requirementsTab" class="sidepanelTab hidden" folder="requirementsTree">
+    			<span class="tabText">Requirements</span>
+    		</div>
+    	  </div>
+    	  <div class="screens section">
+    	    <div id="navigation">
+    	      <ul id="navigationtree">
+    	        <li class="leaf last" title="Screen 1">
+    	          <input class="hidden" value="s-d12245cc-1680-458d-89dd-4f0d7fb22724"></input>
+    	          <div class="top-border"></div>
+    	          <ins class="icon">&nbsp;</ins><a  href="screens/d12245cc-1680-458d-89dd-4f0d7fb22724" tabindex="-1">Screen 1</a>
+    	          <span class="menu_dotred"></span>
+    	        </li>
+    	      </ul>
+    	    </div>
+    	  </div>
+    	  <div class="scenario section" style="display:none;">
+    	    <div id="navigation">
+    	      <ul id="navigationtree">
+    	        <li title="default">
+    	          <input class="hidden" value="sc-bb8abf58-f55e-472d-af05-a7d1bb0cc014"></input>
+    	          <div class="top-border"></div>
+    	          <a href="scenarios/bb8abf58-f55e-472d-af05-a7d1bb0cc014" tabindex="-1">default</a>
+    	          <span class="menu_dotred"></span>
+    	        </li>
+    	      </ul>
+    	    </div>
+    	  </div>
+    	    <div class="requirement section" style="display:none">
+    	    <div id="navigation">
+    	    </div>
+    	  </div>
+      </div>
+      <div id="devSideDivider"><div></div></div>
+      <div id="developerPropertiesPalette">
+      	<div class="devSection">
+    	  	<div id="itemUserId">
+    	  		<span></span>
+    	  	</div>
+    	  	<div id="itemPosition">
+    	  		<div id="itemX" class="itemBoundsTag">
+    	  			<span class="devTag devPinSpan">Margin </span>
+    	  			<span class="devTag">X: </span>
+    	  			<span class="valueTag"></span>
+    	  			<span class="devPinSpan pinType"></span>
+    	  		</div>
+    	  		<div id="itemY" class="itemBoundsTag">
+    	  			<span class="devTag devPinSpan">Margin </span>
+    	  			<span class="devTag">Y: </span>
+    	  			<span class="valueTag"></span>
+    	  			<span class="devPinSpan pinType"></span>
+    	  		</div>
+    	  	</div>
+    	  	<div id="itemSize">
+    	  		<div id="itemWidth" class="itemBoundsTag">
+    	  			<span class="devTag">Width: </span>
+    	  			<span></span>
+    	  		</div>
+    	  		<div id="itemHeight" class="itemBoundsTag">
+    	  			<span class="devTag">Height: </span>
+    	  			<span></span>
+    	  		</div>  	
+    	  	</div>
+      	</div>
+      	<div class="devSeparator"></div>
+      	<div class="devSection">
+      		<div id="devFile">
+      			<div id="devFileText">
+      				<span id"devFileTitle">File:</span>
+      				<a id="devFileURL" download></a>
+      			</div>
+      			<a id="devFileDownload" download></a>
+      		</div>
+      	</div>
+      	<div id="devFileSeparator" class="devSeparator"></div>
+      	<div class="devSection">
+      		<div id="devValue">
+      			<span>Value</span>
+      			<div id="devValueBox" class="devBox">
+      				<span></span>
+      			</div>
+      		</div>
+    	  	<div id="devCSS">
+    	  		<span>CSS</span>
+    	  		<div id="devCSSBox" class="devBox"></div>
+    	  	</div>
+      	</div>
+      	<div class="devSeparatorWidget"></div>
+      	<div class="devSection">
+      		<div id="devWidgetDescription">
+      			<span>Description</span>
+      			<div id="devWidgetDescriptionBox" class="devBox">
+      				<span></span>
+      			</div>
+      		</div>
+      	</div>
+      </div>
+    </div>
+    <div id="jim-mainWindow">
+        <div id="thumbnailTriangle" class="hidden"></div>
+        <div id="scenarioThumbnail" class="hidden">
+            <div id="thumbnailPos"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                    <path style="fill:#E74747" d="M22.453 13.308c-.078-.185-.26-.308-.463-.308h-5.99v-12.5c0-.276-.223-.5-.5-.5h-7c-.276 0-.5.224-.5.5v12.5h-5.989c-.202 0-.385.122-.462.309-.077.186-.035.4.106.544l9.946 10.009c.094.094.222.147.354.147.133 0 .26-.052.354-.146l10.033-10.009c.144-.144.187-.358.111-.546z"/>
+                </svg>
+            </div>
+        </div>
+        <div id="topBarInfo" class="open">
+            <div id="topInfo"class="" onselectstart="return false;">
+                <div id="infoContent">
+                    <div class="leftcontrols">
+                        <div id="logo" class="section"><img alt="logo" src="resources/jim/images/sidepanel/logo@2x.png"></img></div>
+                        <div class="comments-separator"></div>
+                        <div id="info" class="section info-text-label">
+                            <span id="projectname" title="project_Prototype 1_2021-09-20_21h40m17s">project_Prototype 1_2021-09-20_21h40m17s</span>
+                            <span id="projectNameSeparator">/</span>
+                            <span id="canvasname"></span>
+                            <span class="filterText"> - <span id="filterImage"></span>Filtered by: <span id="scenarioName" class="brandableText"></span><span id="closefilterImage"></span></span>
+                        </div>
+                    </div>
+                    <div id="top-bar-hide" class="topBarToggle">
+                        <span></span>
+                        <div id="hidderBackground"></div>
+                    </div>
+                    <div class="rightcontrols">
+                        <div class="webdevice-options section">
+                            <div id="webdevice-selector" class="webdevice-selector" onchange="this.blur()">
+                              <ul id="webdevice-selector-menu">
+                             	 <li value="originalwidth" selectorText="Original Width">Original screen's width</li>
+                             	 <li value="fullbrowserwidth" selectorText="Full Browser Width">Full browser width</li> 
+                              </ul>
 
+
+                              <div id="webdevice-selector-text">Original Width</div>
+                              <span id="webdevice-selector-img"></span>
+                            </div>
+                        </div>
+                        <a id="editButton" href="#" title="Edit" class="highSmallButton hidden">
+                        	<img src="./resources/jim/images/sidepanel/edit_justinmind_ prototype_icon@2x.png">
+                        	&nbsp;Edit
+                        </a>
+                        <div class="comments-separator"></div>
+                        <div id="topbar-mode-developer" class="topBarToggleButton modeButton"></div>
+                        <div id="topbar-mode-play" class="topBarToggleButton modeButton selected"></div>
+                        <div id="topbar-mode-comments" class="topBarToggleButton modeButton">
+                        	<div id="topbar-mode-comments-icon"></div>
+            				<span id="topbar-comments-num">0</span>            
+                        </div>
+                        <div class="comments-separator"></div>
+                        <div id="toggle-panel-btn"><span class="menu_off"></span></div>
+                    </div>
+                </div>
+            </div>
+            <div id="topSeparationLine" class=""></div>
+        </div>
+        <div id="toppanel" class="hidden" onselectstart="return false;">
+          <div id="control-bar">
+            <div id="rotateDevice" class="hidden">
+                <span>ROTATE</span>
+            </div>
+            <div class="panel-separator"></div>
+            <div class="hidden">
+                <select id="gestureTool" onchange="this.blur()">
+                  <option value="0" selected="selected">One finger</option>
+                  <option value="1">Two fingers (pinch)</option>
+                  <option value="2">Two fingers (rotate)</option>
+                </select>
+                <span class="customSelectImage"></span>
+            </div>
+            <div class="panel-separator"></div>
+            <div class="hidden">
+                <span id="zoom-slider-minus"></span>
+                <div id="zoom-slider" zoomValue="100">
+                    <div id="zoom-bar-hotspot">
+                        <div id="zoom-slider-empty"></div>
+                        <div id="zoom-slider-full" class="brandableBackground"></div>
+                    </div>
+                    <div id="zoom-slider-cursor" class="brandableBackground"></div>
+                </div>
+                <span id="zoom-slider-plus"></span>
+            </div>
+          </div>
+        </div>
+        <div id="jim-body" class="full">
+          <div class="dialogShadow"></div>
+          <div class="requirementComponentsDialog">
+            <div id="requirementComponentsTitle">Requirement components</div>
+            <div id="requirementTableLabels">
+              <span id="requirementComponentLabel">Component</span>
+              <span id="requirementCanvasLabel">Canvas</span>
+            </div>
+            <div id="requirementComponentsContainer">
+              <div id="requirementColumnSeparator"></div>
+              <div id="requirementComponentsList"></div>
+            </div>
+            <div id="requirementCloseButton"></div>
+          </div>
+            <div id="jim-web">
+              <div id="web-clip-left"></div>
+              <div id="web-clip-right"></div>
             	<div class="pin-transform-layer">
             		<div id="simulation" class="firer"></div>
             	</div>
